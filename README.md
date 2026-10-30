@@ -1,11 +1,13 @@
 # Campus-map-application-2.0
-This is the updated version of application 1.0
+This is the updated version of application 1.0.
 # Eduvos Campus Explorer (mobile web app / PWA)
 
-Static, dependency-free app. Serve this folder over HTTPS (or `python3 -m http.server`) and open on a phone;
-use "Add to Home Screen" to install. Edit the `nodes` array at the top of `app.js` to adjust positions/links/names.
-To add a place: add a node, put `assets/<id>_low.webp` (~870px) and `assets/<id>_high.webp` (4096x2048) in assets.
+Static, dependency-free app. Serve this folder over HTTPS (or run `python -m http.server 8000`)
+and open `http://localhost:8000/app2.0.html`. Use "Add to Home Screen" to install.
 
+Edit the `nodes` array at the top of `app2.0.js` to adjust positions, links, or names.
+Each place needs `assets/<id>_low.webp` (~870px wide) and `assets/<id>_high.webp` (4096x2048)
+panoramas. The supplied images include the map and branding, but not the place panoramas.
 
 ## Icons
-Branded icons (any + maskable), favicons and `og-image.jpg` are in `assets/`. Regenerate with your own artwork by replacing those files (keep the names).
+Replace the images in `assets/` to use your own map and branding; keep the filenames unchanged.
